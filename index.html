@@ -12,11 +12,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <style>
+		.clickable-image {
+   		 transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+		}
+
+		.clickable-image:hover {
+				transform: scale(1.05); /* Scale the image to 105% of its original size */
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+			}
 		#footer .medium-img {
             width: 16px;
             height: 16px;
             object-fit: contain;
         }
+		#one .medium-img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            vertical-align: middle; /* Align the image to the middle of the surrounding text */
+        }
+
+		html {
+    		scroll-behavior: smooth;
+		}	
+
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -29,7 +48,7 @@
 						<h1><a href="index.html">Maadhavan</a></h1>
 						<nav id="nav">
 							<ul>
-								<li class="special">
+								<!-- <li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
@@ -40,7 +59,7 @@
 											<li><a href="#">Log In</a></li>
 										</ul>
 									</div>
-								</li>
+								</li> -->
 							</ul>
 						</nav>
 					</header>
@@ -49,12 +68,14 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Maadhavan Muthuselvan</h2>
-							<p> Welcome to my Website!</p>
-							<ul class="actions special">	
-								<li><a href="projects.html" class="button primary">Projects!</a></li>
-							</ul>
+							<p> Welcome to my Website!<br> Feel free to look around!<br></p>
+							<!-- Scroll Down Arrow -->
+							<a href="#one" class="scroll-down">
+    							<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+       	 							<path fill="currentColor" d="M7 10l5 5 5-5"/>
+    							</svg>
+							</a>
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
 
 				<!-- One -->
@@ -64,30 +85,104 @@
 								<h1>Current Information</h1>
 								<h2>- 3rd year Management Information Systems Major @ University of Georgia<br>
 									- Software Engineering Fellow @ Headstarter AI<br>
-									- Community Service Assistant @ University Housing</h2>
+									- Community Service Assistant @ University Housing <br>
+									- Ranked Starter V @ NBA Infinite</h2>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><a href="https://github.com/maadhavan23" class="icon solid fa-code major style3" target="_blank"><span class="label">Dolor</span></a></li>
-							</ul>							
+								<li><a href="projects.html" class="icon" target="_blank">
+									<span class="icon fa-gem major style1"><span class="label">Lorem</span></span>
+								</a></li>
+								<li><a href="https://docs.google.com/document/d/19WfdoSleDL4TNX-A_OxZQTMFZpUYO9tu2Lhn29aJ8Hc/edit?usp=sharing" class="icon" target="_blank">
+									<img src="images/icons/resumePic.png" class="medium-img" alt="Resume Picture">
+								</a></li>
+								<li><a href="https://github.com/maadhavan23" class="icon solid fa-code major style3" target="_blank">
+									<span class="label">Dolores!</span>
+								</a></li>
+							</ul>
+														
 						</div>
 					</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
+					<!-- projectsTable -->
+					<section id="projectsTable" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Projects</h2>
+								<p> Here I'm going to be updating my professional and personal projects! <br> For more info about these projects, send me an email or check out my LinkedIn!</p>
+							</header>
+							<ul class="features">
+								</li>
+								<li class="">
+									<a href="https://docs.google.com/presentation/d/14VIqiCyju2nQRVc0FQZ1p7cIXZq6sImkJ87LWVRu6wM/edit?usp=sharing" target="_blank">
+										<img src="images\projects\GreenSpace Icon.png" alt="GreenSpace Icon" class ="clickable-image" style="height: 50px; width: auto;">
+									</a>
+										<p>GreenSpace is an app designed to show users different local areas for Pick-Up Sports. Click the Logo to learn more!</p>
+									<div class="inner">
+										<header class="minor">
+											<h2>Skills Used</h2>
+										</header>
+										<div class="skills-container">
+											<span class="skill">Figma</span>
+											|
+											<span class="skill">UX Design</span>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<a href="https://docs.google.com/presentation/d/13fNE0I9M6L77nOi6S0Nz7WphVO6quTZF4KuTTqN9p-E/edit?usp=sharing" target="_blank">
+										<img src="images\projects\Athens Access Icon.png" alt="GreenSpace Icon" class ="clickable-image" style="display: block; margin: 0 auto; height: 200px; width: auto;">
+									</a>	
+										<p>Me and my group designed Athens Access, an app that connects users who wish to visit Athens with nearby hotels to their chosen events. The project went from low-fidelity sketches to a high-fidelity prototype. Click the Logo to learn more!</p>
+									<div class="inner">
+										<header class="minor">
+											<h2>Skills Used</h2>
+										</header>
+										<div class="skills-container">
+											<span class="skill">Figma</span>|
+											<span class="skill">Iterative Design</span>|
+											<span class="skill">UX Design</span>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<h2>Eagle Scout Project</h2>
+									<div class="eaglePics">
+										<img src="images/projects/Eagle/Pre Project.jpg" alt="Pre" style="height: 200px; width: auto;">
+										<img src="images/projects/Eagle/Post Project.jpg" alt="Post" style="height: 200px; width: auto;">
+									</div>
+										<p>Planned and Built a Paver Walkway over the course of 7 months for the Non-Profit Furkids<br>
+											100 total Volunteer Hours with an average of 8 Workers throughout.
+										</p>
+									<div class="inner">
+										<header class="minor">
+											<h2>Skills Used</h2>
+										</header>
+										<div class="skills-container">
+											<span class="skill">Microsoft Suite</span>|
+											<span class="skill">Project Planning</span>
+										</div>
+									</div>
+								</li>								
+							</ul>
+						</div>
+					</section>
+
+				<!-- me -->
+					<section id="me" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images\me\cruise1.jpg" alt="" /></div><div class="content">
+								<h2>A little bit about me!</h2>
+								<p>As stated above, I'm currently a 3rd year MIS Major at UGA, while also gaining experience in SWE through
+									side projects and internships.I am also involved in our Resident Hall Association, where I plan on improving the livelihoods of other students
+									of my fellow students.
+								</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>More fun stuff!</h2>
+								<p>	In my free time, I also enjoy playing most competitive and recreational sports, reading, as well as south indian cooking!
+								</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -97,43 +192,6 @@
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
 							</div>
 						</section>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
 					</section>
 
 				<!-- CTA -->
@@ -156,7 +214,7 @@
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/_maadhavan/?locale=%25E4%25BC%25AA%25E9%2580%25A0%25E4%25B9%258C%25E5%2585%25B9%25E5%2588%25AB%25E5%2585%258B%25E6%2596%25AF%25E5%259D%25A6Greendot%25E9%2593%25B6%25E8%25A1%258C%25E581%25E4%25BF%25A1%252BTG%252F%25E9%25A3%259E%25E6%259C%25BA%253A%2540buth2788%257DI223b%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%25C6%25BE%25D6%25A4%3F%3Fd7b5Z" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-							
+
 							<li><a href="https://medium.com/@maadhavanuga" class="icon"><img src="images/medium.png" class="medium-img" target = "_blank"></a></li>
 
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
